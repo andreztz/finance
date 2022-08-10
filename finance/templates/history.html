@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History 
+{% endblock %}
+
+{% block main %}
+
+<h2>Summary Transactions</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Prices</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in transactions %}
+        <tr>
+            <td>{{ row.symbol }}</td>
+            <td>{{ row.shares_qtd }}</td>
+            <td class='{{ "text-danger" if row.shares_qtd < 0 }}'>{{ row.price | usd }}</td>
+            <td>{{ row.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

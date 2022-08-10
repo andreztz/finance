@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main%}
+    {% if request.method == 'GET' %}
+        <form method="POST">
+            <div class="form-group">
+                <input autofocus required class="form-control" name="symbol" placeholder="Symbol">
+            </div>
+            <button class="btn btn-primary" type="submit">Quote</button>
+            <small class="form-text text-muted">
+                <a href="https://iextrading.com/trading/eligible-symbols" target="_blank" rel="noopener noreferrer" />
+                    https://iextrading.com/trading/eligible-symbols/
+                </a>
+            </small>
+        </form>
+    {% else %}
+        {% if stock %}
+            <p>{{ "A share of {name} {symbol} costs ${price:,.2f}".format(**stock) }}</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}
