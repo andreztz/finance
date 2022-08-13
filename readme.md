@@ -3,7 +3,7 @@
 Finance é pequeno aplicativo para a web escrito em python, onde usuários podem gerenciar suas "carteiras" de ações com operações de compra, venda e consulta de preços usando a API do [iex](https://cloud.iexapi.com). Esse projeto foi desenvolvido durante o curso CS50 da Fundação Estudar com o objetivo de por em prática todos os conceitos apresentados. 
 
 
-![](database_diagram.pbg)
+![](./database_diagram.png)
 
 
 ## Desenvolvimento 
@@ -39,10 +39,10 @@ $ python -c 'import secrets; print(secrets.token_hex())'
 
 ### Obtenha credenciais de acesso a [api iex](https://cloud.iexapi.com) 
 
-- Visite [[iexcloud.io/cloud-login#/register/]].
+- Visite [https://iexcloud.io/cloud-login#/register/](https://iexcloud.io/cloud-login#/register/).
 - Selecione o tipo de conta “Individual”, digite seu endereço de e-mail e uma senha e clique em "Create account”.
 - Depois de registrado, role para baixo até “Get started for free” e clique em “Select Start” para escolher o plano gratuito.
-- Depois de confirmar sua conta por e-mail de confirmação, visite [[https://iexcloud.io/console/tokens]].
+- Depois de confirmar sua conta por e-mail de confirmação, visite [https://iexcloud.io/console/tokens](https://iexcloud.io/console/tokens).
 - Copie a chave que aparece na coluna Token, deve começar com `pk_`.
 
 
