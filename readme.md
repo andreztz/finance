@@ -1,6 +1,6 @@
 # Finance
 
-Finance é pequeno aplicativo para a web escrito em python, onde usuários podem gerenciar suas "carteiras" de ações com operações de compra, venda e consulta de preços usando a API do [iex](https://cloud.iexapi.com). Esse projeto foi desenvolvido durante o curso CS50 da Fundação Estudar com o objetivo de por em prática todos os conceitos apresentados. 
+Finance é pequeno aplicativo para a web escrito em python, onde usuários podem gerenciar suas "carteiras" de ações com operações de compra, venda e consulta de preços usando a [API iex](https://cloud.iexapi.com). Esse projeto foi desenvolvido durante o curso CS50 da Fundação Estudar com o objetivo de por em prática todos os conceitos apresentados. 
 
 
 ![](./database_diagram.png)
