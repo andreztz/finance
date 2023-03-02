@@ -4,11 +4,9 @@ from wtforms import Form
 from wtforms import StringField
 from wtforms import PasswordField
 from wtforms.validators import Length
-from wtforms.validators import InputRequired
 from wtforms.validators import DataRequired
 from wtforms.validators import EqualTo
 from wtforms.validators import ValidationError
-from wtforms.validators import Regexp
 
 
 def password_is_valid(password):
