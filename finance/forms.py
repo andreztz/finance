@@ -19,7 +19,7 @@ def username_is_valid(username):
     return True if re.match(pattern, username) else False
 
 
-def validate_username(form, username):
+def validate_username(_, username):
     if not username_is_valid(username.data):
         raise ValidationError(
             "Your username must have only letters, numbers or underscores."
@@ -27,7 +27,7 @@ def validate_username(form, username):
     return True
 
 
-def validate_password(form, password):
+def validate_password(_, password):
     if not password_is_valid(password.data):
         raise ValidationError("The password is not complex enough!")
     return True
