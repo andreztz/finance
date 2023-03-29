@@ -1,6 +1,6 @@
 # Finance
 
-O Finance é um aplicativo web escrito em Python que permite aos usuários gerenciarem suas "carteiras" de ações, realizando operações de compra, venda e consulta de preços por meio da API iex. Desenvolvido durante o curso CS50 da Fundação Estudar, o objetivo desse projeto foi aplicar na prática todos os conceitos apresentados.
+O Finance é um aplicativo web escrito em Python que permite aos usuários gerenciarem suas "carteiras" de ações, realizando operações de compra, venda e consulta de preços por meio da [API iex](https://cloud.iexapi.com). Desenvolvido durante o curso CS50 da Fundação Estudar, o objetivo desse projeto foi aplicar na prática todos os conceitos apresentados.
 
 
 ![](./database_diagram.png)
